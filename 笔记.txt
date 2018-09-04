@@ -1,0 +1,61 @@
+Git:版本控制器
+多人操作，控制代码
+支持回滚
+支持分支
+分布式
+
+Git没有服务端和客户端只说
+
+
+
+GitHub和码云 只说git的远程代码托管服务器
+
+Git核心操作：
+1、工作目录
+	就是看得见
+	本地资源文件夹
+2、暂存区(索引区)
+	临时存储信息
+	一般使用add命令
+
+3、版本库	
+	真正存储的内容
+	一般使用commit---绿色
+
+分支之间是彼此独立的
+
+
+常用的基本Git命令：
+git init 初始化  会在当前文件夹中创建隐藏文件夹.git
+git add 文件名  将指定文件添加到暂存区中
+git status 	         查看暂存区的内容状态  绿色需要提交 红色修改
+git commit -m '备注信息'   提交暂存区的内容到版本库中
+git diff  查看暂存区的具体信息，如果缓存、改动等
+git log  查看提交信息  可以获取提交的唯一标记
+git reset --hard 提交的唯一id   回滚到指定的版本
+
+Git分支命令：
+git branch  列出本地所有的分支
+git branch 分支名称  新增分支
+git checkout 分支名称  切换分支
+git merge   分支名称    将分支合并当前的分支中  
+git branch -d 分支名称  删除分支
+
+
+Git远程操作命令：
+git clone 路径   克隆  拷贝远程代码
+git remote add origin 路径  关联远程仓库（秘钥）
+git fetch origin 分支名称  抓取远程仓库的代码  下载
+git pull origin 分支名称  抓取远程仓库的代码  下载
+git push origin 分支名称  上传本地版本库中的内容到远程仓库指定分支中  上传
+git remote rm 分支名称  删除远程仓库的分支
+git remote rename 新分支名称  旧分支名称 重命名远程分支的名称
+git remote show origin  显示远程仓库的具体的信息
+
+
+
+
+
+
+
+
